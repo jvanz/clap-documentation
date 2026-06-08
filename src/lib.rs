@@ -1,10 +1,4 @@
-//! Autogenerate Markdown documentation for clap command-line tools
-//!
-//! See [**Examples**][Examples] for examples of the content `clap-markdown`
-//! generates.
-//!
-//! [Examples]: https://github.com/ConnorGray/clap-markdown#Examples
-//!
+//! Autogenerate Markdown or AsciiDoc documentation for clap command-line tools
 
 // Ensure that doc tests in the README.md file get run.
 #[doc(hidden)]

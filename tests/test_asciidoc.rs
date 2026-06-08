@@ -1,5 +1,5 @@
 use clap::{Arg, Command};
-use clap_markdown::{help_asciidoc_command_custom, AsciiDocOptions};
+use clap_documentation::{help_asciidoc_command_custom, AsciiDocOptions};
 
 use pretty_assertions::assert_eq;
 

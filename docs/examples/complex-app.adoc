@@ -1,38 +1,40 @@
-# Command-Line Help for `complex-app`
+= Command-Line Help for `complex-app`
 
 This document contains the help content for the `complex-app` command-line program.
 
-**Command Overview:**
+*Command Overview:*
 
-* [`complex-app`↴](#complex-app)
-* [`complex-app test`↴](#complex-app-test)
-* [`complex-app only-hidden-options`↴](#complex-app-only-hidden-options)
+* <<complex-app,`complex-app`>>
+* <<complex-app-test,`complex-app test`>>
+* <<complex-app-only-hidden-options,`complex-app only-hidden-options`>>
 
-## `complex-app`
+[[complex-app]]
+== `complex-app`
 
 An example command-line tool
 
-**Usage:** `complex-app [OPTIONS] [NAME] [COMMAND]`
+*Usage:* `complex-app [OPTIONS] [NAME] [COMMAND]`
 
-###### **Subcommands:**
+=== *Subcommands:*
 
 * `test` — does testing things
 * `only-hidden-options` — Demo that `Options` is not printed if all options are hidden
 
-###### **Arguments:**
+=== *Arguments:*
 
 * `<NAME>` — Optional name to operate on
 
    Longer description
 
-###### **Options:**
+=== *Options:*
 
 * `-c`, `--config <FILE>` [alias: `configuration`] — Sets a custom config file
 * `--target <TARGET>`
-
-  Default value: `local`
-
-  Possible values:
++
+Default value: `local`
++
+Possible values:
++
   - `local`:
     Do the operation locally
   - `remote`
@@ -44,25 +46,27 @@ An example command-line tool
 
 
 
-## `complex-app test`
+[[complex-app-test]]
+== `complex-app test`
 
 does testing things
 
-**Usage:** `complex-app test [OPTIONS]`
+*Usage:* `complex-app test [OPTIONS]`
 
-**Command Alias:** `tester`
+*Command Alias:* `tester`
 
-###### **Options:**
+=== *Options:*
 
 * `-l`, `--list` — lists test values
 
 
 
-## `complex-app only-hidden-options`
+[[complex-app-only-hidden-options]]
+== `complex-app only-hidden-options`
 
 Demo that `Options` is not printed if all options are hidden
 
-**Usage:** `complex-app only-hidden-options`
+*Usage:* `complex-app only-hidden-options`
 
 
 

@@ -15,7 +15,6 @@ use clap::builder::PossibleValue;
 #[non_exhaustive]
 pub struct MarkdownOptions {
     title: Option<String>,
-    show_footer: bool,
     show_table_of_contents: bool,
     show_aliases: bool,
 }
@@ -25,7 +24,6 @@ impl MarkdownOptions {
     pub fn new() -> Self {
         return Self {
             title: None,
-            show_footer: true,
             show_table_of_contents: true,
             show_aliases: true,
         };
@@ -34,13 +32,6 @@ impl MarkdownOptions {
     /// Set a custom title to use in the generated document.
     pub fn title(mut self, title: String) -> Self {
         self.title = Some(title);
-
-        return self;
-    }
-
-    /// Whether to show the default footer advertising `clap-markdown`.
-    pub fn show_footer(mut self, show: bool) -> Self {
-        self.show_footer = show;
 
         return self;
     }
@@ -166,18 +157,6 @@ fn write_help_markdown(
 
     build_command_markdown(buffer, Vec::new(), command, 0, options).unwrap();
 
-    //-----------------
-    // Write the footer
-    //-----------------
-    if options.show_footer {
-        write!(buffer, r#"<hr/>
-
-<small><i>
-    This document was generated automatically by
-    <a href="https://crates.io/crates/clap-markdown"><code>clap-markdown</code></a>.
-</i></small>
-"#).unwrap();
-    }
 }
 
 fn build_table_of_contents_markdown(
