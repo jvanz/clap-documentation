@@ -1,6 +1,6 @@
 [package]
 name = "clap-documentation"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   "Connor Gray <code@connorgray.com>",
   "José Guilherme Vanz <jguilhermevanz@suse.com",
