@@ -186,7 +186,7 @@ fn build_command_asciidoc(
         )
     }
     */
-    writeln!(buffer, "[[{}]]", command_path.join("-"))?;
+    writeln!(buffer, "[#{}]", command_path.join("-"))?;
     writeln!(buffer, "== `{}`\n", command_path.join(" "))?;
 
     if let Some(long_about) = command.get_long_about() {

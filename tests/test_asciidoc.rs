@@ -62,7 +62,7 @@ This document contains the help content for the `my-program-display-name` comman
 
 * <<my-program-display-name,`my-program-display-name`>>
 
-[[my-program-display-name]]
+[#my-program-display-name]
 == `my-program-display-name`
 
 This program does things.
@@ -138,7 +138,7 @@ This document contains the help content for the `my-program-display-name` comman
 
 * <<my-program-display-name,`my-program-display-name`>>
 
-[[my-program-display-name]]
+[#my-program-display-name]
 == `my-program-display-name`
 
 This program does things.

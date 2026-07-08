@@ -8,7 +8,7 @@ This document contains the help content for the `complex-app` command-line progr
 * <<complex-app-test,`complex-app test`>>
 * <<complex-app-only-hidden-options,`complex-app only-hidden-options`>>
 
-[[complex-app]]
+[#complex-app]
 == `complex-app`
 
 An example command-line tool
@@ -46,7 +46,7 @@ Possible values:
 
 
 
-[[complex-app-test]]
+[#complex-app-test]
 == `complex-app test`
 
 does testing things
@@ -61,7 +61,7 @@ does testing things
 
 
 
-[[complex-app-only-hidden-options]]
+[#complex-app-only-hidden-options]
 == `complex-app only-hidden-options`
 
 Demo that `Options` is not printed if all options are hidden
